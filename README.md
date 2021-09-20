@@ -23,6 +23,7 @@ The following tasks and questions will drive the visualization and interaction d
   * Use a node-link tree diagram for the different tracks and determine which driver has the most wins there (make it interactive by seeing a full breakdown of the winners there or allow the user to filter by track type)
   * Update my driver's first win bar graph and make it interactive so we can see which track their first win came at
   * Who had the most starts during this time frame?
+  * Where, geographically, are most tracks located? (Interactive to zoom in on regions)
   * Update my scatterplot for car maker finishes so that the size of the dots increases based on the number of finishes at that position
   * Is there a correlation between starting and finishing positions?
   * At what starting position do winners tend to start from?
