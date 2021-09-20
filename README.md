@@ -2,7 +2,8 @@
 
 ## Data
 
-The data I propose to visualize for my project is ...
+The data I propose to visualize for my project is a datset containing information on every NASCAR race run from 1975 to 2003. It contains 10 variables including the driver's name, starting and finishing positions, their payout, car make, etc. There is an accompanying dataset that contains information on each track (such as length and track type) that joins this dataset via a composite key, and would allow for further visualizations and interactivity. 
+Here is a link to the driver dataset: https://gist.github.com/rgjohnson98/1adb1e0d401abab38e1d294ac70f547e
 
 ## Prototypes
 
