@@ -23,7 +23,7 @@ The following tasks and questions will drive the visualization and interaction d
   * Use a node-link tree diagram for the different tracks and determine which driver has the most wins there (make it interactive by seeing a full breakdown of the winners there or allow the user to filter by track type)
   * Update my driver's first win bar graph and make it interactive so we can see which track their first win came at
   * Who had the most starts during this time frame?
-  * Where, geographically, are most tracks located? (Interactive to zoom in on regions)
+  * Where, geographically, are most tracks located? (Interactive so we can zoom in on regions or click on a specific state)
   * Update my scatterplot for car maker finishes so that the size of the dots increases based on the number of finishes at that position
   * Is there a correlation between starting and finishing positions?
   * At what starting position do winners tend to start from?
@@ -31,9 +31,10 @@ The following tasks and questions will drive the visualization and interaction d
 
 ## Sketches
 
-(insert one or more hand-drawn sketches of interactive visualizations that you imagine)
-(describe each sketch - how is the data visualized, what are the interactions, and how do these relate to the questions/tasks)
+[![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/7c04b9c4eda92473dbcfa2ac69d12af5482c52c8/20210920_174337.jpg)]
+ * The first sketch shows a modification I would like to make to my winners bar chart. I would like to make it so if you click on one of the bars, it will display some facts about the driver and the race they won, such as the track name, the year, and how many starts it took them to win.
+ * The second sketch is for a potential viz that I think would be interesting to create. I am not sure if it would be possible, but I think it would cool to display the cumulative total wins drivers have as time progresses. It would be an animated bar chart that shows cumulative wins as races occur, and would rank the bars automatically as the cumulative wins changes.
 
 ## Open Questions
 
-(describe any fear, uncertainty, or doubt you’re having about the feasibility of implementing the sketched system. For example, “I’m not sure where to get the geographic shapes to build a map from this data” or “I don’t know how to resolve the codes to meaningful names” … Feel free to delete this section if you’re confident.)
+For starters, I am still new to this programming language, and most of my prior coding experience is in R. As I showed already herein, I know how to do the neccesary preprocessing, etc. in R, but I am not sure how to replicate those results in D3, if it is possible. Therefore, thus far, I have utilized both. I hope that is okay. If not, I would be happy to get some help. Likewise, I don't know how to combine data from different datasets into the same Viz. I have detailed several ideas that would require this. And, a lot of my ideas are pretty advanced, so I really am not sure how to implament them, if they are possible.
