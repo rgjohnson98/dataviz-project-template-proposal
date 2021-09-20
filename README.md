@@ -16,15 +16,17 @@ The second prototype I have is this one. This is a bar chart showing the number 
 [![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/2f0df7ce5a50ea1d0fc450a7a7a95675cf0cc549/NASCAR%20Starts%20Bar.PNG)](https://vizhub.com/rgjohnson98/8f4ebea5b2a74516a648fb5764fd233e)
 
 
-
 ## Questions & Tasks
 
 The following tasks and questions will drive the visualization and interaction decisions for this project:
-
- * (insert your question or task here) How does the X vary over time?
- * (insert your question or task here) Is there any correlation between X and Y?
- * (insert your question or task here) Are there interesting spatial patterns in X?
- * (insert your question or task here) How many X are there across different Y?
+  * How has driver's payout changed over time? (Further, how has the winner's payout changed over time?)
+  * Use a node-link tree diagram for the different tracks and determine which driver has the most wins there (make it interactive by seeing a full breakdown of the winners there or allow the user to filter by track type)
+  * Update my driver's first win bar graph and make it interactive so we can see which track their first win came at
+  * Who had the most starts during this time frame?
+  * Update my scatterplot for car maker finishes so that the size of the dots increases based on the number of finishes at that position
+  * Is there a correlation between starting and finishing positions?
+  * At what starting position do winners tend to start from?
+  * Can we track cumulative wins to see who won the most during this time frame?
 
 ## Sketches
 
