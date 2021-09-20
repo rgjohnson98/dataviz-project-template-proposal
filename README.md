@@ -7,9 +7,9 @@ Here is a link to the driver dataset: https://gist.github.com/rgjohnson98/1adb1e
 
 ## Prototypes
 
-I’ve created a proof of concept visualization of this data. It's a ... and it shows ...
+Thus far, I have two prototype visualizations. The first is this scatterplot showing the finishing positions of each car make throughout the 28 years shown in this dataset. As we can see, neither Plymouth nor Chrysler won any races during that time, but all others have won at least once.
 
-[![image](https://user-images.githubusercontent.com/68416/65240758-9ef6c980-daff-11e9-9ffa-e35fc62683d2.png)](https://vizhub.com/curran/eab039ad1765433cb51aad167d9deae4)
+[![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/2f0df7ce5a50ea1d0fc450a7a7a95675cf0cc549/NASCAR%20Make%20Scatterplot.PNG)](https://vizhub.com/rgjohnson98/7bfbdfe47ee34b5d811ede4ea41232a4)
 
 (please put a screenshot of one or more visualizations of this dataset you already made, for previous assignments, and link to them)
 
