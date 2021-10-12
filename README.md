@@ -21,9 +21,7 @@ My fourth [prototype](https://vizhub.com/rgjohnson98/a4e8883a6b62466aa6ebe21b90d
 My fifth and final [prototype](https://vizhub.com/rgjohnson98/83f502237c234b50b205b7f9aea671a5) is an interactive map. This map shows the locations of the different tracks that NASCAR runs on by their geographical coordinates. The dots are colored by the type of track, and this plot is made interactive by hover capability. Hovering over a track will provide some details about it, such as it's type, length, status (some trackes closed between 1975 and 2003), and the last winner there.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCAR%20Track%20Map%20Viz%20WIP.PNG)
 
-
 ## Questions & Tasks
-
 The following tasks and questions represent my revised goals for this project.
   * How long does it typically take for drivers to win their first race? (My first visualization)
   * Who had the most starts (and other metrics such as wins) during this time frame? (My second visualization)
@@ -32,7 +30,18 @@ The following tasks and questions represent my revised goals for this project.
   * Where, geographically, are most tracks located? (My fifth visualization)
   * How has the winner's payout changed over time? (A potential sixth visualization, depending on how far I get)
 
+## Summary of Interaction
+Here is a summary of the interaction I have (or am planning on having) for each of my visualizations:
+  * First Wins Bar Graph: Hovering over a bar will display the number of starts, the year, and the track. 
+  * Top 10 Driver Bar Graph: The user will select a metric to view in the bar graph and it will update accordingly.
+  * Starting Position Scatter Plot: The user can hover over dots and see which driver won and at what track.
+  * Car Maker Scatter Plot: The user can hover over the dots to see the position and the frequency.
+  * Track Map: User can hover over the dot and see details on the different tracks.
 
-Data processing is done.
+
+
+Split driver name into two words on capital letter
+Data processing is done. Base viz is done
 TODO: Readme
 Section for interatiocn, section for deliverables (what remains to be done)
+Add starting position number to startting position plot for what is displayed on hover
