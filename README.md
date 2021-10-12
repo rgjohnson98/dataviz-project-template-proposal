@@ -44,7 +44,7 @@ Data processing is all but done. Base viz is done w/ one exception
 For many of these, the changes from here on out will be more "cosmetic" and less "structural"
 Split driver name into two words on capital letter
 Starts before win: Play with color, play with position and orientation of driver’s names. Add title. Make sure the README is up to date, and make sure the viz works as expected.
-Metric bar graph: Fix it. It isn’t working properly. Make sure it displays the requested metrics, the x-axis title and scale are correct. Add a y-axis and Viz title. Play with color.
+Metric bar graph: Fix it. It isn’t working properly. Make sure it displays the requested metrics, the x-axis title and scale are correct. Add a y-axis and Viz title. Play with color. Fix winning percentage
 Starting position scatter plot: Fix the names so they are split on capital letter. Play with color, text size for hover box, play with dot size and opacity. If possible, how to tell if multiple people start from the same position. Add starting position to the startting position plot for what is displayed on hover
 Car make scatter plot: Increase the base dot size or contrast between the levels of size to make it more obvious. Play with color, make sure you can see the dots for the more infrequent makers.
 Map: Check info. Make sure it displays properly. Fix the title, play with the colors. Play with legend.
