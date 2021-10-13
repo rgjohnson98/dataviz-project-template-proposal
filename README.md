@@ -39,14 +39,46 @@ Here is a summary of the interaction I have (or am planning on having) for each 
   * Track Map: User can hover over the dot and see details on the different tracks.
 
 ## Schedule of Deliverables 
-
-Data processing is all but done. Base viz is done w/ one exception
-For many of these, the changes from here on out will be more "cosmetic" and less "structural"
-Split driver name into two words on capital letter
-Starts before win: Play with color, play with position and orientation of driver’s names. Add title. Make sure the README is up to date, and make sure the viz works as expected.
-Metric bar graph: Fix it. It isn’t working properly. Make sure it displays the requested metrics, the x-axis title and scale are correct. Add a y-axis and Viz title. Play with color. Fix winning percentage.
-Starting position scatter plot: Fix the names so they are split on capital letter. Play with color, text size for hover box, play with dot size and opacity. If possible, how to tell if multiple people start from the same position. Add starting position to the startting position plot for what is displayed on hover
-Car make scatter plot: Increase the base dot size or contrast between the levels of size to make it more obvious. Play with color, make sure you can see the dots for the more infrequent makers.
-Map: Check info. Make sure it displays properly. Fix the title, play with the colors. Play with legend. See resources from Dr. Rename the variables in the Gist
-For all, check driver names in display, make sure the viz and hover are working properly. Update README. 
-
+Here is a schedule of deliverables:
+  * Fix my preprocessed data
+    * Split the driver's name into First Last, not FirstLast
+    * Fix the data frame for my map so that it will display most wins at the track, not most recent winner
+    * Projected completion date: 10/15
+  * Starts before first win bar graph
+    * Change the color
+    * Fix with position and orientation of driver’s names
+    * Add a title 
+    * Projected completion date: 10/18
+  * Driver metric bar graph
+    * Fix the winning percentage metric. The x-axis is not displaying the data properly
+    * Make sure the plot will display the requested metrics
+    * Decide if other metrics should be included
+    * Make sure the x-axis and scale are correct and update
+    * Add a y-axis title and viz title
+    * Play with the color
+    * Projected completion date: 10/21
+  * Starting position scatter plot
+    * Make sure the names display properly
+    * Change the color, the text size for the tooltip, and the opacity
+    * Add the starting position to the tooltip, or change the axis scale
+    * Projected completion date: 10/24
+  * Car make scatter plot
+    * Increase the size for the smallest dots so they are visible
+    * Make the size of the bigger dots bigger (will make the contrast more obvious)
+    * Play with color
+    * Make sure the tooltip displays the proper data
+    * Change variable name from "Freq" to "Frequency" so it will display properly
+    * Projected completion date: 10/27
+  * Track Map
+    * Lighten the state outlines to be a lighter shade of grey or white
+    * Recheck the track info to ensure there are no spelling errors and that it displays properly in the tooltip
+    * Change the variable names in the gist and see if they can be left justified
+    * Fix the title, and the title for the legend
+    * Play with the colors
+    * Change "recent winner" metric to "most wins" for the track
+    * Projected completion date: 10/30
+  * For all plots
+    * Check the tooltip displays, especially the driver's names
+    * Make sure the viz updates and displays properly
+    * Update README
+    * Projected completion date: 11/4
