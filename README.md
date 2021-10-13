@@ -47,6 +47,6 @@ Starts before win: Play with color, play with position and orientation of driver
 Metric bar graph: Fix it. It isn’t working properly. Make sure it displays the requested metrics, the x-axis title and scale are correct. Add a y-axis and Viz title. Play with color. Fix winning percentage.
 Starting position scatter plot: Fix the names so they are split on capital letter. Play with color, text size for hover box, play with dot size and opacity. If possible, how to tell if multiple people start from the same position. Add starting position to the startting position plot for what is displayed on hover
 Car make scatter plot: Increase the base dot size or contrast between the levels of size to make it more obvious. Play with color, make sure you can see the dots for the more infrequent makers.
-Map: Check info. Make sure it displays properly. Fix the title, play with the colors. Play with legend.
-For all, check driver names in display, make sure the viz and hover are working properly. Update README
+Map: Check info. Make sure it displays properly. Fix the title, play with the colors. Play with legend. See resources from Dr. Rename the variables in the Gist
+For all, check driver names in display, make sure the viz and hover are working properly. Update README. 
 
