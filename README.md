@@ -82,3 +82,7 @@ Here is a schedule of deliverables:
     * Make sure the viz updates and displays properly
     * Update README
     * Projected completion date: 11/4
+
+## Project Feedback Iteration
+[Here](https://vizhub.com/rgjohnson98/19742d253430447fab8a8e43fb17c949) is my iteration of the "Winners by Starting Position" viz having incorporated the feedback given. This is exactly the direction I needed on this, and I think it looks so much better and more informative this way. I colored the points on the plot by the track name, and sized them by the track length. This provides the viewer with an opportunity to look for patterns, particularly among tracks and track types. For example, one may notice that the larger dots (such as the 2.66 mile Talladega Superspeedway) produce a lot more winners from further back in the field than short tracks like the .526 mile long Martinsville Speedway where passing is harder. 
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCAR%20Starts%20Viz%20Iteration.PNG)
