@@ -1,0 +1,155 @@
+library(dplyr)
+RaceData <- read.csv("C:/Users/rgjoh/Documents/Nascar Dataset/Nascar Driver Data.csv")
+names(RaceData)
+TrackData <- read.csv("C:/Users/rgjoh/Documents/Nascar Dataset/Nascar Race Data.csv")
+names(TrackData)
+track.data <- TrackData[, c('Race.Num', 'Year', 'Race.Num.of.Year','Track.Length','Track.Name')]
+
+RaceData$Driver <- gsub('([[:upper:]])', ' \\1', RaceData$Driver)
+
+
+
+#### First Wins ######
+# Subset a driver's first race
+race.first <- RaceData[match(unique(RaceData$Driver), RaceData$Driver),]
+head(race.first)
+
+# Attach the number of occurance a name shows up
+RaceDataRev <- RaceData %>% 
+  group_by(Driver) %>% 
+  mutate(Index=1:n())
+
+#Subset the winners
+race.winners <- RaceDataRev[RaceDataRev$Finishing.Pos == "1",]
+
+#Now, subset their first win!
+race.first.winners <- race.winners[match(unique(race.winners$Driver), race.winners$Driver),]
+
+merged.data <- merge(race.first.winners,track.data, by = c("Race.Num","Year","Race.Num.of.Year"))
+
+mean(race.first.winners$Index)
+barplot(sort(race.first.winners$Index))
+
+# Export this subset of the data
+write.csv(race.first.winners, "C:/Users/rgjoh/Documents/Nascar Dataset/race.first.winners.csv")
+write.csv(merged.data, "C:/Users/rgjoh/Documents/Nascar Dataset/merged.data.csv")
+
+length(unique(race.first.winners$Driver)) #61 winners
+length(unique(RaceData$Driver)) #683 Drivers
+
+#### Stats By Driver ######
+starts <- RaceData %>% group_by(Driver) %>% tally(Finishing.Pos > 0, name = "Starts")
+wins <- RaceData %>% group_by(Driver) %>% tally(Finishing.Pos == "1", name = "Wins")
+top5s <- RaceData %>% group_by(Driver) %>% tally(Finishing.Pos < 6, name = "Top5")
+top10s <- RaceData %>% group_by(Driver) %>% tally(Finishing.Pos < 11, name = "Top10")
+poles <- RaceData %>% group_by(Driver) %>% tally(Starting.Pos == "1", name = "Poles")
+winperc <- wins$Wins/starts$Starts
+DriverTotals <- data.frame(starts$Driver,starts$Starts,wins$Wins,top5s$Top5,top10s$Top10,poles$Poles,winperc)
+write.csv(DriverTotals, "C:/Users/rgjoh/Downloads/DriverTotals.csv")
+
+
+#### Group By Year, Wins among Drivers ######
+datalist = list()
+for(i in 1975:2003) {
+    WBY <- RaceData %>% filter(Year == i) %>% group_by(Year, Driver) %>%  tally(Finishing.Pos == 1, name = "Wins")
+    WP <- WBY %>% filter(Wins > 0)
+    df <- data.frame(WP)
+    datalist[[i]] <- df
+  }
+results <- bind_rows(datalist)
+results
+
+#### Starting Position Among Winners ######
+merged_data <- merge(RaceData,TrackData, by = c("Race.Num","Year","Race.Num.of.Year"))
+winners <- merged_data[merged_data$Finishing.Pos == "1",]
+# winners_by_start <- data.frame(winners$Race.Num,winners$Year,winners$Race.Num.of.Year,winners$Finishing.Pos,winners$Starting.Pos,winners$Driver,winners$Track.Name)
+winners_by_start_sort <- winners[order(winners$Race.Num,winners$Year),]
+unique(winners_by_start_sort$Track.Name)
+winners_by_start_sort$Track.Type <- 
+  ifelse(winners_by_start_sort$Track.Name=='Daytona International Speedway', 'Plate Track',
+  ifelse(winners_by_start_sort$Track.Name=='Talladega Superspeedway ', 'Plate Track',
+  ifelse(winners_by_start_sort$Track.Name=='Indianapolis Motor Speedway', 'Flat Track',
+  ifelse(winners_by_start_sort$Track.Name=='New Hampshire International', 'Flat Track',
+  ifelse(winners_by_start_sort$Track.Name=='Phoenix International Raceway', 'Flat Track',
+  ifelse(winners_by_start_sort$Track.Name=='Pocono Raceway ', 'Flat Track',
+  ifelse(winners_by_start_sort$Track.Name=='Ontario Motor Speedway', 'Flat Track',
+  ifelse(winners_by_start_sort$Track.Name=='Infineon Raceway ', 'Road Course',
+  ifelse(winners_by_start_sort$Track.Name=='Watkins Glen International', 'Road Course',
+  ifelse(winners_by_start_sort$Track.Name=='Riverside International Raceway', 'Road Course',
+  ifelse(winners_by_start_sort$Track.Name=='Bristol Motor Speedway', 'Short Track',
+  ifelse(winners_by_start_sort$Track.Name=='Martinsville Speedway ', 'Short Track',
+  ifelse(winners_by_start_sort$Track.Name=='Richmond International Raceway', 'Short Track',
+  ifelse(winners_by_start_sort$Track.Name=='North Wilkesboro Speedway', 'Short Track',
+  ifelse(winners_by_start_sort$Track.Name=='North Carolina Speedway', 'Short Track',
+  ifelse(winners_by_start_sort$Track.Name=='Atlanta Motor Speedway', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='California Speedway ', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=="Lowe's Motor Speedway", 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Chicagoland Speedway ', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Darlington Raceway ', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Dover International Speedway', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Homestead-Miami Speedway ', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Kansas Speedway ', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Kentucky Speedway', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Las Vegas Motor' , 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Michigan International Speedway', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Texas Motor Speedway', 'Oval Track',
+  ifelse(winners_by_start_sort$Track.Name=='Nashville Speedway ', 'Oval Track',
+                                 NA))))))))))))))))))))))))))))
+winners_by_start_sort <- winners_by_start_sort[order(winners_by_start_sort$Race.Num,winners_by_start_sort$Year),]
+
+track_info_map$Year[track_info_map$Year == "1996"] <- "Defunct, 1996"
+winners_by_start_sort$Track.Type[winners_by_start_sort$Track.Type == "Plate Track"] <- "1. Plate Track"
+winners_by_start_sort$Track.Type[winners_by_start_sort$Track.Type == "Road Course"] <- "2. Road Course"
+winners_by_start_sort$Track.Type[winners_by_start_sort$Track.Type == "Flat Track"] <- "3. Flat Track"
+winners_by_start_sort$Track.Type[winners_by_start_sort$Track.Type == "Oval Track"] <- "4. Oval Track"
+winners_by_start_sort$Track.Type[winners_by_start_sort$Track.Type == "Short Track"] <- "5. Short Track"
+write.csv(winners_by_start_sort, "C:/Users/rgjoh/Downloads/winners_sort.csv")
+
+
+
+#### Finishes Among Car Makers ######
+automaker_finishes <- data.frame(RaceData$Car.Make,RaceData$Finishing.Pos)
+car_marker_finishes_count <- data.frame(table(automaker_finishes))
+write.csv(car_marker_finishes_count, "C:/Users/rgjoh/Downloads/car_marker_finishes_count.csv")
+
+
+#### Track Info For Map ######
+TrackData$Road.Indicator[TrackData$Road.Indicator=="0"] <- "Oval Track"
+TrackData$Road.Indicator[TrackData$Road.Indicator=="1"] <- "Road Course"
+merged_data <- merge(RaceData,TrackData, by = c("Race.Num","Year","Race.Num.of.Year"))
+track_info <- data.frame(merged_data$Track.Lat,merged_data$Track.Long,merged_data$Race.Num,merged_data$Year,merged_data$Race.Num.of.Year,merged_data$Track.Length,merged_data$Road.Indicator,merged_data$Caution.Flags,merged_data$Lead.Changes, merged_data$Finishing.Pos, merged_data$Driver, merged_data$Track.Name)
+colnames(track_info) <- c("Track_Lat","Track_Lon","Num","Year","Num_of_Yr","Length","Track_Type","Cautions","Lead_Changes","Finish","Driver","Track_Name")
+track_winners <- track_info[track_info$Finish == "1",]
+track_winners_sort <- track_winners[order(track_winners$Num,track_winners$Year),]
+track_winners_ind <- track_winners_sort %>% 
+  group_by(Track_Name) %>% 
+  mutate(Index=1:n())# Attach the number of occurance a track shows up
+track_winners_last <- track_winners_ind %>% 
+  group_by(Track_Name) %>% 
+  filter(Index == max(Index)) %>%
+  ungroup()
+track_stats <- track_winners_ind %>%
+  group_by(Track_Name) %>% 
+  summarize(adv_cautions = mean(Cautions, na.rm = TRUE),
+            adv_leaders = mean(Lead_Changes, na.rm = TRUE),
+            yrs_active = max(Index)-min(Index))
+track_info_map <- data.frame(
+  track_winners_last$Track_Lat,track_winners_last$Track_Lon,track_winners_last$Year,
+  track_winners_last$Length,track_winners_last$Track_Type,track_winners_last$Driver,
+  track_winners_last$Track_Name,track_stats$adv_cautions,track_stats$adv_leaders)
+names(track_info_map)
+colnames(track_info_map) <- c("Latitude","Longitude","Year","Track_Length","Track_Type","Recent_Winner","Track_Name","Adv_Cautions","Adv_Lead_Changes")
+track_info_map$Year[track_info_map$Year == "2003"] <- "Active"
+track_info_map$Year[track_info_map$Year == "1980"] <- "Defunct, 1980"
+track_info_map$Year[track_info_map$Year == "1984"] <- "Defunct, 1984"
+track_info_map$Year[track_info_map$Year == "1988"] <- "Defunct, 1988"
+track_info_map$Year[track_info_map$Year == "1996"] <- "Defunct, 1996"
+# 1980, 1984, 1988, 1996
+write.csv(track_info_map, "C:/Users/rgjoh/Downloads/track_info_map.csv")
+
+
+#### Finishes Among Car Makers, Revised ######
+
+car_maker_finishes <- merge(RaceData,track.data, by = c("Race.Num","Year","Race.Num.of.Year"))
+sort(car_maker_finishes$Race.Num)
+write.csv(car_maker_finishes, "C:/Users/rgjoh/Downloads/car_maker_finishes.csv")
