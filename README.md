@@ -88,7 +88,9 @@ Here is a schedule of deliverables:
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCAR%20Starts%20Viz%20Iteration.PNG)
 
 ## Project Progress Report and Revised To-Do List 
+Here is my project update as of November 7, 2021. I have five visualizations and they are essentially complete, minus updating the README files and potentially some cosmetic changes, pending feedback from my classmates. So, here are my updated plots:
 
+[Here](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg1.PNG)
 
   * Make sure the track names are consistent across vizzes
   * Update README for each file
