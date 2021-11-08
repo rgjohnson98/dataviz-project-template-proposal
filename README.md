@@ -104,8 +104,18 @@ Next up is my [viz](https://vizhub.com/rgjohnson98/220e9635e3a246ce869f252569ff8
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg4.PNG)
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg4%20(Filter%20Active).PNG)
 
-  * Make sure the track names are consistent across vizzes
-  * Update README for each file
-  * Dashboard: Add all to the same sheet. How to if they use different datasets?
-  * Cross-Filter: Add it. Click a track to update all. Make a separate legend box
+Next is my [chart](https://vizhub.com/rgjohnson98/cbc26d9eb24f41548b2d048ead4915d2) displays the drivers with the top 10 most wins during this period, split by track. In order to display just the top 10, a variable was added to the dataset called "IsInTop10" and added to rows for those drivers. I also added a tooltip to display the track name, and the number of wins there. This viz is done, except for cross-filtering. My intention is for the tracks other than the one selected to be greyed out during filtering.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg5.PNG)
+
+My final [viz](https://vizhub.com/rgjohnson98/85f04416bed44645963d1b47ec5bfde0) is the chart showing the number of starts it took for each winner to win their first race. The only modification I made recently is to change the colors to match the other plots, so the colors for a specific track are the same across the visualizations. This viz is done, except for what will need to be done for the cross-filter. Again, I'd like the bars other than the ones for the track selected to be greyed out.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg6.PNG)
+
+Finally, I created an image of what I would like the final product to look like (approximately, of course). All of the visualizations interact with each other and are interactive themselves through tooltips. This was made in MS Word, and is just a rough outline of what I would like to achieve as the final product. I would really like to thank Raul for pointing me in this direction. Before his suggestion, I did not have as clear a direction on a final product. I had just planned on having five or six different visualizations that were not really connected. Now, I have ideas and a plan for getting them done. I think an interactive dashboard will really tie everything together.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjGoal.PNG)
+
+What is left to do now:
+  * Update Data: Make sure the track names are consistent across vizzes
+  * Update README for each plot
+  * Dashboard: Add allplots to the same sheet. How to do if they use different datasets?
+  * Cross-Filter: Add it so that clicking a track in the legend will update all. How to implament?
   * Stat Scatter: Move up the legend, add title
