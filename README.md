@@ -88,9 +88,17 @@ Here is a schedule of deliverables:
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCAR%20Starts%20Viz%20Iteration.PNG)
 
 ## Project Progress Report and Revised To-Do List 
-Here is my project update as of November 7, 2021. I have five visualizations and they are essentially complete, minus updating the README files and potentially some cosmetic changes, pending feedback from my classmates. So, here are my updated plots:
+Here is my project update as of November 7, 2021. I have five visualizations and they are essentially complete, minus updating the README files and potentially some cosmetic changes, pending feedback from my classmates. Then, I will need to attach them to a dashboard, whihc I am working on, and add a cross-filter so that they will work together. So, here are my updated plots:
 
-[Here](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg1.PNG)
+[Here](https://vizhub.com/rgjohnson98/def19c52ecc94ae1aa78dad8a083d647) is my dashbord "skeleton" thus far. I have had some trouble constructing it and am continuing to work on it. Once it is ready, I will attach the plots to their designated spaces, and add a cross-filter so that the user can select a track, and all the plots will update accordingly to focus only on those stats. Please see the end of this section for an image of what I would like everything to look like when it is done, but note that it is just an image and not functional in any way.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg1.PNG)
+
+My first [viz](https://vizhub.com/rgjohnson98/5e91de25a2744f658c6a2c947c361e1d) is below. I have included two images to demonstade the dropdown and hover capability. This viz is essentially complete. I added the stats dropdown, hover capability for the tracks, and added a tooltip to display the driver's name and the track type. Very little remains to be done on this one. I need to add a title, move up the legend if that's possible, and update the README.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg1.PNG)
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg2a.PNG)
 
   * Make sure the track names are consistent across vizzes
   * Update README for each file
+  * Dashboard: Add all to the same sheet. How to if they use different datasets?
+  * Cross-Filter: Add it. Click a track to update all. Make a separate legend box
+  * Stat Scatter: Move up the legend, add title
