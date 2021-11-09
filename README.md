@@ -94,8 +94,8 @@ Here is my project update as of November 8, 2021. I have five visualizations and
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg1.PNG)
 
 My first [viz](https://vizhub.com/rgjohnson98/5e91de25a2744f658c6a2c947c361e1d) is below. I have included two images to demonstade the dropdown and hover capability. This viz is essentially complete. I added the stats dropdown, hover capability for the tracks, and a tooltip to display the driver's name and the track type. Very little remains to be done on this one. I need to add a title, move up the legend if that's possible, and update the README.
-![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg2a.PNG)
-![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg2b.PNG)
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCARScattera.PNG)
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCARScatterb.PNG)
 
 My second [viz](https://vizhub.com/rgjohnson98/83f502237c234b50b205b7f9aea671a5) is the track map. Once again, each track has it's own color and the tooltip displays data on the track such as the length, the type, and, now, who has the most wins there (plus the count). This viz is basically done, except for updating the README.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg3.PNG)
@@ -114,7 +114,6 @@ I also created an image of what I would like the final product to look like, and
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjGoal.PNG)
 
 What is left to do now:
-  * Update README for each plot
   * Dashboard: Add all plots to the same sheet. How do I do this if they have different data sources?
   * Cross-Filter: Add a cross-filter to the dashboard so that clicking a track in the legend will update all. How to implament it?
-  * Cosmetic changes to vizzes: Add color to the automaker plot, add a fade effect to the vizzes for when the filter is active, add a title to the Stats Scatter plot
+  * Cosmetic changes to vizzes: Add color to the automaker plot, add a fade effect to the vizzes for when the filter is active
