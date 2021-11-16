@@ -93,27 +93,34 @@ Here is my project update as of November 8, 2021. I have five visualizations and
 [Here](https://vizhub.com/rgjohnson98/def19c52ecc94ae1aa78dad8a083d647) is my dashbord "skeleton" thus far. I have had some trouble constructing it and am continuing to work on it. Once it is ready, I will attach the plots to their designated spaces, and add a cross-filter so that the user can select a track, and all the plots will update accordingly to focus only on those stats. Please see the end of this section for an image of what I would like everything to look like when it is done, but note that it is just an image and not functional in any way.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg1.PNG)
 
+
 My first [viz](https://vizhub.com/rgjohnson98/5e91de25a2744f658c6a2c947c361e1d) is below. I have included two images to demonstade the dropdown and hover capability. This viz is essentially complete. I added the stats dropdown, hover capability for the tracks, and a tooltip to display the driver's name and the track type. Very little remains to be done on this one. I need to add a title, move up the legend if that's possible, and update the README.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCARScattera.PNG)
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/NASCARScatterb.PNG)
 
+
 My second [viz](https://vizhub.com/rgjohnson98/83f502237c234b50b205b7f9aea671a5) is the track map. Once again, each track has it's own color and the tooltip displays data on the track such as the length, the type, and, now, who has the most wins there (plus the count). This viz is basically done, except for updating the README.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg3.PNG)
+
 
 Next up is my [viz](https://vizhub.com/rgjohnson98/220e9635e3a246ce869f252569ff8b6e) of the race finishes by automaker. The first image below is the full viz, with no filter. The second image I have attached below shows my filter active, and set to Daytona International Speedway, home of the sport's most famous race. The filter I have now has to be set manually in the code, but this is something that will be changed once I have a cross-filter worked out. I will also try to make the dots the color of the track when the filter is activated, but I am not sure how to do that.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg4.PNG)
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg4%20(Filter%20Active).PNG)
 
+
 Next is my [chart](https://vizhub.com/rgjohnson98/cbc26d9eb24f41548b2d048ead4915d2) displays the drivers with the top 10 most wins during this period, split by track. In order to display just the top 10, I added a variable to the dataset called "IsInTop10" to rows for those drivers. I also added a tooltip to display the track name, and the number of wins there. This viz is done for now. My intention is for the tracks other than the one selected to be greyed out during cross-filtering.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg5.PNG)
+
 
 My final [viz](https://vizhub.com/rgjohnson98/85f04416bed44645963d1b47ec5bfde0) is the chart showing the number of starts it took for each winner to win their first race. The only modification I made recently is to change the track colors to match the other plots. This viz is done, except for what will need to be done for the cross-filter. Again, I'd like the bars other than the ones for the track selected to be greyed out.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjProg6.PNG)
 
+
 I also created an image of what I would like the final product to look like, and have included it here. My goal is for the dashboard to look similar to this and for all of the visualizations to interact with each other, as described above. I made this in MS Word, and it is just a rough outline of what I would like to achieve as the final product. I would really like to thank our classmate Raul for pointing me in this direction. Before his suggestions, I did not have a clear idea for a final product. I had just planned on having five or six different visualizations that were not really connected. Now, I have ideas and a plan for getting them done. I really think an interactive dashboard will tie everything together.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjGoal.PNG)
+
 
 What is left to do now:
   * Dashboard: Add all plots to the same sheet. How do I do this if they have different data sources?
   * Cross-Filter: Add a cross-filter to the dashboard so that clicking a track in the legend will update all. How to implament it?
-  * Cosmetic changes to vizzes: Add color to the automaker plot, add a fade effect to the vizzes for when the filter is active
+  * Cosmetic changes to vizzes: Add a fade effect to the vizzes for when the filter is active
