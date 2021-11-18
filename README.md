@@ -132,6 +132,6 @@ Secondly, [here](https://vizhub.com/rgjohnson98/bad8c60855a849d690c259453ea5bec0
 
 
 What is left to do now:
-  * Dashboard: Add all plots to the same sheet. How do I do this if they have different data sources?
+  * Dashboard: Add all plots to the same sheet, add a header.
   * Cross-Filter: Add a cross-filter to the dashboard so that clicking a track in the legend will update all. How to implament it?
   * Cosmetic changes to vizzes: Add a fade effect to the vizzes for when the filter is active
