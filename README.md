@@ -120,6 +120,17 @@ I also created an image of what I would like the final product to look like, and
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_573_FinalProjGoal.PNG)
 
 
+## Project Progress Report, November 17, 2021
+With practically all of the work on the individual plots done, I took some time this week to work on my dashboard ideas, and constructed a seperate legend for it. The goal here is that, eventually, the user can select a track from the legend, and all five of the plots will update according to their selection. Creating the legend was relatively easy, but, to be honest, I struggled with the dashboard and made little headway all week. After meeting with Dr. Kelleher, though, we created a simple template to work from, and I feel slightly better about completing what I need to do now. I will likely need more help as we go on, but, for now, here is my progress:   
+
+[Here](https://vizhub.com/rgjohnson98/9f61ebafa7f640058d74d70f7121c450) is my legend for the dashboard. This was relatively straightforward, and the only real challenge it presented was making sure the colors were in the correct order.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_Legend.PNG)
+
+
+Secondly, [here](https://vizhub.com/rgjohnson98/bad8c60855a849d690c259453ea5bec0?edit=files) is what I have of the dashboard so far. The code from each plot has been added to its respective files in here, but it has not been properly integrated yet, and nothing is functional yet. This is going to be my big project for the coming week, and I anticipate I will need some more help to get everything how I would like it.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS_Dash.PNG)
+
+
 What is left to do now:
   * Dashboard: Add all plots to the same sheet. How do I do this if they have different data sources?
   * Cross-Filter: Add a cross-filter to the dashboard so that clicking a track in the legend will update all. How to implament it?
