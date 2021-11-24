@@ -146,6 +146,7 @@ My first dashboard is pretty simple. It displays four plots and continues to uti
 
 ## Dashboard 2
 My second dashboard is very similar to the first. The only difference is that I switched out the "top 10 winners" plot for the "starting positions of winners" plot.
+
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/Dashboard%202.png)
 
 ## Dashboard 3
