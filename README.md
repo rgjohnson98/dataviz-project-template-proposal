@@ -135,3 +135,31 @@ What is left to do now:
   * Dashboard: Add all plots to the same sheet, add a header.
   * Cross-Filter: Add a cross-filter to the dashboard so that clicking a track in the legend will update all. How to implament it?
   * Cosmetic changes to vizzes: Add a fade effect to the vizzes for when the filter is active
+
+
+## Project Progress Report, November 24, 2021
+After getting the feedback last week, I spent this week working on the dashbord and going through different renditions of it. I had to change up what I was planning on doing slightly for several reasons. First, I have had to reduce the number of visualizations on the dahsboard from five to four, for space reasons. With three on a single row, it became too crowded and the details far too small. I also decided not to display the legend I was planning on doing for similar reasons. To fit it in would require me to make the text so small it was tough to read. This is one place I would like to get some feedback on. However, one thing here is that each track has a unique color that spans across all of the visualizations, so that helps to act as legend, escpecially when combined with the map plot. So, below are my four dashboard attempts, in the order they were created. I started off rather simply, and then tried some different things to see what worked and what did not.
+
+## Dashboard 1
+My first dashboard is pretty simple. It displays four plots and continues to utilize the same tooltips I used before. There are no filters here, just a very basic plot.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/Dashboard%201.png)
+
+## Dashboard 2
+My second dashboard is very similar to the first. The only difference here is that I switched out the "top 10 winners" plot in favor of the "starting positions of winners" plot.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/Dashboard%202.png)
+
+## Dashboard 3
+For my third dashboard, I added a filter (active in the second image below). It is pretty simple and, when activated, fades the dots not pertaining to the selected track. Sadly I am yet to figure out how to make it so there is only one dropdown for the entire dahsboard that adjustes every plot at once. What I have right now is a dropdown for each plot, so I suppose that is useful if you want to display different information at once. Each visualization resets with a click to the plot. I am very happy with how it has turned out.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/Dashboard%203a.png)
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/Dashboard%203b.png)
+
+## Dashboard 4
+For my final dashboard, I swapped out the "car maker" plot for my "top 10 wins" plot. Other than that, everything is the same. The dropdown works exactly the same for each plot, and they all update accordingly.
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/Dashboard%204a.png)
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/Dashboard%204b.png)
+
+What is left to do now:
+  * Potentially tie everything to a single dropdown
+  * Reset the plots with the selection of "all tracks"
+  * Work on some cosmetic changes based on feedback
+  * Decide which four to display
