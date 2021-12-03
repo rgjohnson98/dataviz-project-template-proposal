@@ -166,7 +166,7 @@ What is left to do now:
 ## Final Project Report
 Overall, I was able to achieve almost every goal I set out to do. Having come into this semester never programmed in D3 or HTML before, I am so proud of how far I've come and how much I've learned. Because I liked all five of my visualizations so much, I made two dashboards for my final submission. Three of the plots are the same, and one changes.
 
-#### First Dashbard:
+#### First Dashboard:
 My first dashboard is viewable [here](https://vizhub.com/rgjohnson98/f6870526ff1c4d1ba3028c017544b995). I adapted what was discussed in class and settled on a dashboard that displays four plots, as opposed to my original idea of five plot and a legend. It was my original goal to have a single dropdown control each plot, but I do not believe that is possible using Vega-lite API. I am very happy with this result, however. Each plot resets separately with a click.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard1Finala.PNG)
 Above is the overall dashboard. The top left plot shows a map of the different tracks run on during this time period (1975-2003). The top right plot is a barchart showing how many starts it took each winner to get their first win. The bottom left shows a scatterplot of the different starting positions the winners started from. The dropdown here is especially helpful in seeing trends at different tracks. And finally, the bottom right plot shows the distributions of finishes by different car makes. It is a very busy plot, but when the filter is applied via the dropdown, it is much more readable. Each plot also has a tooltip with relevant information.
@@ -175,6 +175,10 @@ This second image shows the dashboard with the filter active, and set to Michiga
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard1Finalc.PNG)
 This image demonstrates one of the tooltips for the dashboard. The information highlighted belongs to the map plot, and showcases information about track, such as its length, its status, and who has the most wins there. Each plot has its own tooltips. The map shows the above information, the bar graph shows the driver and the number of starts it took them to get their first win, the scatterplot shows the name of the driver who started at that position, and the final plot shows the finishing position and the count of instances of that finish by that make. 
 
-Second Dashboard: https://vizhub.com/rgjohnson98/5ebc58a9dc5c4ca29257f9ee64682dea
+#### Second Dashboard:
+https://vizhub.com/rgjohnson98/5ebc58a9dc5c4ca29257f9ee64682dea
 
 
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard2Finala.PNG)
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard2Finalb.PNG)
+![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard2Finalc.PNG)
