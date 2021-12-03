@@ -162,5 +162,13 @@ For my final dashboard, I swapped out the "car maker" plot for my "top 10 wins" 
 What is left to do now:
   * Potentially tie everything to a single dropdown
   * Reset the plots with the selection of "all tracks"
-  * Work on some cosmetic changes based on feedback
-  * Decide which four to display
+
+## Final Project Report
+Overall, I was able to achieve almost every goal I set out to do. Having come into this semester never programmed in D3 or HTML before, I am so proud of how far I've come and how much I've learned. Because I liked all five of my visualizations so much, I made two dashboards for my final submission. Three of the plots are the same, and one changes.
+
+#### First Dashbard:
+My first dashboard is viewable [here](https://vizhub.com/rgjohnson98/f6870526ff1c4d1ba3028c017544b995).
+
+Second Dashboard: https://vizhub.com/rgjohnson98/5ebc58a9dc5c4ca29257f9ee64682dea
+
+
