@@ -175,10 +175,15 @@ This second image shows the dashboard with the filter active, and set to Michiga
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard1Finalc.PNG)
 This image demonstrates one of the tooltips for the dashboard. The information highlighted belongs to the map plot, and showcases information about track, such as its length, its status, and who has the most wins there. Each plot has its own tooltips. The map shows the above information, the bar graph shows the driver and the number of starts it took them to get their first win, the scatterplot shows the name of the driver who started at that position, and the final plot shows the finishing position and the count of instances of that finish by that make. 
 
+
 #### Second Dashboard:
-https://vizhub.com/rgjohnson98/5ebc58a9dc5c4ca29257f9ee64682dea
-
-
+My second dashboard is [here](https://vizhub.com/rgjohnson98/5ebc58a9dc5c4ca29257f9ee64682dea). It is very similar to the first one, and only one plot is changed. Again, each plot has its own dropdown, and tooltips.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard2Finala.PNG)
+Above is an image of the dashboard with no filters active. The only difference here is that the plot in the bottom right corner is changed to a stacked bar graph displaying the top 10 winningest drivers during this time frame. Each bar is split by the count of that driver's wins at a given track. The tooltip for this plot displays the track name and the count of wins for each track.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard2Finalb.PNG)
+The above image shows the dashboard with each filter set to "Riverside International Raceway", formerly a road course in southern California. The series ran races here up until 1988. We can see that four drivers got their first wins here, almost every winner at this track started the race in the top 5, and that only six of the top 10 winningest drivers in the series won races here before its closure. The tooltips display specific information about each plot.
 ![image](https://github.com/rgjohnson98/dataviz-project-template-proposal/blob/master/CS573Dashboard2Finalc.PNG)
+The final image demonstrates the tooltips showcasing the information displayed in the "starts before first win" bar graph. As we can see, the driver Tim Richmond got his first win here, and it came in his 44th start. 
+
+#### Final Note
+As a final note as the end of the semester draws near, I would like to thank Dr. Kelleher for all of his help in this class. I learned so much, and really enjoyed it. Even when I struggled with the content (being new the programming language), I think this was my favorite class this semester. As a lifelong photographer, I have always found visual communication to be very interesting. This was an awesome class where I got to work with a dataset I really liked, and got to enhance my visualization skills. I would also like to thank Raul Gamez for his great suggestion on implementing a dashboard for these data. This was an excellent way for me to bring all of my work together into a single place.
