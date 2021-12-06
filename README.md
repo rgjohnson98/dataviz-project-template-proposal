@@ -1,6 +1,5 @@
 # Final Project Report
-Video Link: https://youtu.be/PtLe8Pj27KE
-Please note that in the video you will not be able to see the list of options when I click on the dropdown menus. I tried to re-record it several times, but for some reason the dropdowns do not show up in the video like they do in actual d3.
+[Here](https://youtu.be/PtLe8Pj27KE) is the link to my final project video. Please note that in the video you will not be able to see the list of options when I click on the dropdown menus. I tried to re-record it several times, but for some reason the dropdowns do not show up in the video like they do in actual d3.
 
 # Data Visualization Project Proposal (Final Version)
 
